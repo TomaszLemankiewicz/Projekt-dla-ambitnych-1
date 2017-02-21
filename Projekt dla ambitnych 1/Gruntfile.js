@@ -3,9 +3,9 @@ module.exports = function(grunt) {
   // Project configuration.
   	grunt.initConfig({
   		sass: {
-     		options: {
-        		sourceMap: true
-        	},
+	     	options: {
+	        		sourceMap: true
+	        	},
         	dist: {
         		files: {
          			 'css/main.css': 'sass/main.sass'
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
   	 	},
 
   	 	imagemin: {
-    		dynamic: {
+			dynamic: {
         		files: [{
             		expand: true,
             		cwd: 'images/',
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 		},
 
 		browserSync: {
-            dev: {
+			dev: {
                 options: {
                     watchTask: true,
                     server: './app',
@@ -58,9 +58,9 @@ module.exports = function(grunt) {
   	// Load the plugins tasks 
   	
   	grunt.loadNpmTasks('grunt-sass');
-  	grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-browser-sync');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-browser-sync');
 
   	// Default task(s).
   	
